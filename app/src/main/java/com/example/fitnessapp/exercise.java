@@ -3,11 +3,16 @@ package com.example.fitnessapp;
 public class exercise {
 
     String level,ex_name,equipments;
+    int background;
 
-    public exercise(String level, String ex_name, String equipments) {
+    public exercise(String level, String ex_name, String equipments, int background) {
         this.level = level;
         this.ex_name = ex_name;
         this.equipments = equipments;
+        this.background= background;
+    }
+
+    public exercise() {
     }
 
     public String getLevel() {
@@ -32,5 +37,13 @@ public class exercise {
 
     public void setEquipments(String equipments) {
         this.equipments = equipments;
+    }
+
+    public int getBackground() {
+        return background;
+    }
+
+    public void setBackground(int background) {
+        this.background = background;
     }
 }
