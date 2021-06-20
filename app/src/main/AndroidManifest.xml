@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessApp">
-        <activity android:name=".dailytasks"></activity>
+        <activity android:name=".add_task"></activity>
+        <activity android:name=".dailytasks" />
         <activity android:name=".Diet" />
         <activity android:name=".Reminder" />
         <activity android:name=".workout" />
