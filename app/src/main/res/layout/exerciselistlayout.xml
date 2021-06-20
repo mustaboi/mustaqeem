@@ -26,6 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:hint="level"
                 android:textColor="#028807"
                 android:textSize="18sp" />
 
@@ -33,6 +34,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
+                android:hint="exercise"
                 android:textColor="#BA160A"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -42,6 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
+                android:hint="equipment"
                 android:textColor="#009688"
                 android:textStyle="bold" />
         </LinearLayout>
