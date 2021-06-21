@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/design_default_color_error"></solid>
-    <corners android:radius= "20dp"></corners>
-
+    <solid android:color="@color/design_default_color_error"/>
+    <corners
+        android:bottomRightRadius="550dp"
+        android:bottomLeftRadius="550dp"
+        android:topRightRadius="550dp"
+        android:topLeftRadius="550dp"
+        android:shape="oval"
+        />
 </shape>
