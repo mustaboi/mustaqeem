@@ -27,8 +27,8 @@ public class task_Adaptor extends ArrayAdapter {
 
         LayoutInflater inflater = LayoutInflater.from(getContext()) ;
         View layout = inflater.inflate(R.layout.dailytasklist_layout, parent,false);
-        TextView tv_item1 = layout.findViewById(R.id.tvTitle);
-        TextView tv_item2 = layout.findViewById(R.id.tvDescription);
+        TextView tv_item1 = layout.findViewById(R.id.tv1);
+        TextView tv_item2 = layout.findViewById(R.id.tv2);
         task obj = new task();
         obj = task_list.get(position);
         String x = obj.getTask_name();

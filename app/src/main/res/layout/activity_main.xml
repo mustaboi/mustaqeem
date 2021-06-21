@@ -20,7 +20,7 @@
             android:layout_marginTop="60dp"
             android:foregroundGravity="center"
             android:onClick="onclick_workout"
-            app:srcCompat="@drawable/gym" />
+            app:srcCompat="@drawable/gym1" />
 
         <TextView
             android:id="@+id/textView9"

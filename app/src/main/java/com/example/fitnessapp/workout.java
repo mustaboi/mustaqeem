@@ -16,12 +16,12 @@ public class workout extends AppCompatActivity {
         setContentView(R.layout.activity_workout);
         ArrayList<exercise> list =new  ArrayList<>();
         exercise obj = new exercise();
+        exerciseAdaptor adapter=new exerciseAdaptor(this,list );
+        listview=(ListView)findViewById(R.id.listvieww);
         obj.equipments = "Floor Mat";
         obj.ex_name = "Push ups";
         obj.level = "Beginner";
         list.add(obj);
-        exerciseAdaptor adapter=new exerciseAdaptor(this,list );
-        listview=(ListView)findViewById(R.id.listvieww);
         listview.setAdapter(adapter);
     }
 }
