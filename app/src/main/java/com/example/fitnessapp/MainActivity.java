@@ -24,11 +24,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void onclick_routine(View view){
-        Intent intent = new Intent(this, workout.class);
+        Intent intent = new Intent(this, dailytasks.class);
         startActivity(intent);
     }
     public void onclick_reminder(View view){
-        Intent intent = new Intent(this, workout.class);
+        Intent intent = new Intent(this, Reminder.class);
         startActivity(intent);
     }
 

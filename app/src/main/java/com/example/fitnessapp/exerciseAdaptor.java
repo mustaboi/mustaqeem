@@ -35,8 +35,6 @@ public class exerciseAdaptor extends ArrayAdapter {
         String x = obj.getEquipments();
         String y = obj.getEx_name();
         String z = obj.getLevel();
-        int img = obj.background;
-        layout.setBackgroundResource(img);
         tv_item1.setText(z);
         tv_item2.setText(y);
         tv_item3.setText(x);

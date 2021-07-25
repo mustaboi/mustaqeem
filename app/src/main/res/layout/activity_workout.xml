@@ -27,13 +27,21 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="197dp"
+            android:layout_height="115dp"
             app:srcCompat="@drawable/fitness" />
 
         <ListView
             android:id="@+id/listvieww"
             android:layout_width="match_parent"
-            android:layout_height="419dp" />
+            android:layout_height="474dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape"
+            android:text="Add workout" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

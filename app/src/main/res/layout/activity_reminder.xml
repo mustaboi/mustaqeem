@@ -9,38 +9,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#65BAFA"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="150dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView17"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:orientation="vertical">
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Reminders"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textColor="#070505"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textView19"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="300dp"
-                android:layout_marginLeft="300dp"
-                android:text="TextView"
-                android:textColor="#C10F0F" />
-        </LinearLayout>
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
