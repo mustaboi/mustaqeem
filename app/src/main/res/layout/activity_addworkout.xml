@@ -8,6 +8,22 @@
     tools:context=".addworkout">
 
 
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape"
+        android:text="Main Page"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="#063970"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="151dp"
@@ -52,12 +68,11 @@
         app:layout_constraintVertical_bias="0.024"
         app:srcCompat="@drawable/bodyy" />
 
-    <TextView
+    <EditText
         android:id="@+id/exname"
         android:layout_width="245dp"
         android:layout_height="41dp"
         android:background="@drawable/text_shape"
-        android:editable="true"
         android:gravity="center"
         android:hint="enter name"
         android:textSize="24sp"
@@ -67,7 +82,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.31" />
 
-    <TextView
+    <EditText
         android:id="@+id/exlevel"
         android:layout_width="245dp"
         android:layout_height="44dp"
@@ -82,12 +97,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.417" />
 
-    <TextView
+    <EditText
         android:id="@+id/exequip"
         android:layout_width="288dp"
         android:layout_height="113dp"
         android:background="@drawable/text_shape"
-        android:editable="true"
         android:gravity="center|top"
         android:hint="enter equipment"
         android:textSize="24sp"

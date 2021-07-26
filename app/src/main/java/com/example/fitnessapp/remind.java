@@ -3,12 +3,12 @@ import java.time.LocalDateTime;
 
 public class remind {
     String rem_name;
-    LocalDateTime dt;
+    String dt;
 
     public remind() {
     }
 
-    public remind(String rem_name, LocalDateTime dt) {
+    public remind(String rem_name, String dt) {
         this.rem_name = rem_name;
         this.dt = dt;
     }
@@ -21,11 +21,11 @@ public class remind {
         this.rem_name = rem_name;
     }
 
-    public LocalDateTime getDt() {
+    public String getDt() {
         return dt;
     }
 
-    public void setDt(LocalDateTime dt) {
+    public void setDt(String dt) {
         this.dt = dt;
     }
 }

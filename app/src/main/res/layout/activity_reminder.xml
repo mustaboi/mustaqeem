@@ -15,7 +15,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView17"
@@ -30,6 +31,24 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcycler"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="515dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape"
+            android:text="Add"
+            app:backgroundTint="#EF8383" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape"
+            android:text="Main Page"
+            app:backgroundTint="#EF8383" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

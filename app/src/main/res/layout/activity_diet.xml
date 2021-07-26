@@ -41,7 +41,7 @@
             <ListView
                 android:id="@+id/dietlist"
                 android:layout_width="match_parent"
-                android:layout_height="509dp" />
+                android:layout_height="450dp" />
 
             <Button
                 android:id="@+id/button4"
@@ -50,6 +50,14 @@
                 android:layout_gravity="center"
                 android:background="@drawable/buttonshape"
                 android:text="Add" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonshape"
+                android:text="Main" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

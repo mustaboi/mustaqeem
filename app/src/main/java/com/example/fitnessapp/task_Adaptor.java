@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +17,7 @@ import java.util.ArrayList;
 public class task_Adaptor extends ArrayAdapter {
     Context c;
     ArrayList<task> task_list;
+    CheckBox bx;
 
     public task_Adaptor(Context context, ArrayList<task> n) {
         super(context,R.layout.dailytasklist_layout,n);
@@ -29,6 +32,10 @@ public class task_Adaptor extends ArrayAdapter {
         View layout = inflater.inflate(R.layout.dailytasklist_layout, parent,false);
         TextView tv_item1 = layout.findViewById(R.id.tv1);
         TextView tv_item2 = layout.findViewById(R.id.tv2);
+        bx= layout.findViewById(R.id.box1);
+        if(bx.isChecked()){
+            Toast.makeText(c, "TASK COMPLETED", Toast.LENGTH_SHORT).show();
+        }
         task obj = new task();
         obj = task_list.get(position);
         String x = obj.getTask_name();

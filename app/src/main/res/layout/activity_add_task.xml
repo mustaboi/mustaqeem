@@ -7,6 +7,21 @@
     android:background="@drawable/appback4"
     tools:context=".add_task">
 
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="157dp"
+        android:layout_height="68dp"
+        android:background="@drawable/buttonshape"
+        android:text="Main Page"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="#063970"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ex_equip"
+        app:layout_constraintVertical_bias="0.646" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -23,13 +38,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.186" />
 
-    <TextView
+    <EditText
         android:id="@+id/ex_name"
         android:layout_width="match_parent"
         android:layout_height="20pt"
         android:layout_margin="20dp"
         android:background="@drawable/text_shape"
-        android:editable="true"
+
         android:hint="Add Task Title"
         android:paddingLeft="15dp"
         android:textColor="@color/white"
@@ -42,13 +57,12 @@
         app:layout_constraintVertical_bias="0.068" />
 
 
-    <TextView
+    <EditText
         android:id="@+id/ex_equip"
         android:layout_width="377dp"
         android:layout_height="151dp"
         android:layout_margin="20dp"
         android:background="@drawable/text_shape"
-        android:editable="true"
         android:hint="Add Task Description"
         android:paddingLeft="15dp"
         android:textColor="#FFFFFF"

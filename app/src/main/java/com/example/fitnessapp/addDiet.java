@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class addDiet extends AppCompatActivity {
    TextView t1,t2,t3;
-   Button b1;
+   Button b1,b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,14 @@ public class addDiet extends AppCompatActivity {
         t2=findViewById(R.id.textView13);
         t3=findViewById(R.id.textView21);
         b1= findViewById(R.id.button5);
+        b2=findViewById(R.id.button10);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(addDiet.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,10 +36,9 @@ public class addDiet extends AppCompatActivity {
                 y=t2.getText().toString();
                 z=t3.getText().toString();
                 Intent intent = new Intent(addDiet.this,Diet.class);
-                intent.putExtra("name",x);
-                intent.putExtra("type",y);
-                intent.putExtra("cont",z);
-                intent.putExtra("flag",true);
+                DataBaseHandler db = new DataBaseHandler(addDiet.this);
+                food temp=new food(x,y,z);
+                db.ins_diet_Data(temp);
                 startActivity(intent);
             }
         });

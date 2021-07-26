@@ -33,15 +33,23 @@
         <ListView
             android:id="@+id/listvieww"
             android:layout_width="match_parent"
-            android:layout_height="474dp" />
+            android:layout_height="432dp" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="111dp"
+            android:layout_width="164dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/buttonshape"
             android:text="Add workout" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape"
+            android:text="main" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

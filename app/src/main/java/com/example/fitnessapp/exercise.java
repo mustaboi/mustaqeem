@@ -5,7 +5,7 @@ public class exercise {
     String level,ex_name,equipments;
 
 
-    public exercise(String level, String ex_name, String equipments, int background) {
+    public exercise(String level, String ex_name, String equipments) {
         this.level = level;
         this.ex_name = ex_name;
         this.equipments = equipments;
